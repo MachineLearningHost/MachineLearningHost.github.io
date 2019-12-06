@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<h1>Welcome to the MachineLearningHosting site! </h1>
+<p>Please excuse our interface! Our developers are working to fix it by 2020!</p>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--The Password is
+I HAVE SOME GOOD news. Next month, The Atlantic will once again send fiction home to our subscribers, in a special supplement that will accompany our May issue. On the newsstand, the supplement will be bound into the May magazine.
+
+The short story has been integral to 
+The Atlantic since 
+our first issue, in 1857
+, in which we published
+ four stories,
+ including “The Mourning
+ Veil,” by Harriet Beecher Stowe
+. But as longtime, generously loyal
+ readers know, for the past five
+ years we have published fiction once a year
+ in a special newsstand issue, rather than
+ in any of our 10 subscriber issues. During
+ what has been widely noted to be a “challenging” (read:
+ harrowing) business environment for publishing, this has
+ been a necessary compromise
+. But none of us has been particularly happy
+ with it, and we have been searching
+ for ways to once again place great fiction in
+ front of all our readers.-->
+
+
+<script type="text/javascript">
+    function checkPswd() {
+        //function IgnorePass
+        //IgnorePassword = var(AIHosting123123123123)
+        var confirmPassword = "admin"; //entry admin
+        //password is AIHosting123123123
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
